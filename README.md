@@ -1,4 +1,4 @@
-# 📝 Task Manager Full Stack Web Application  
+# 📝 Task Organizer Full Stack Web Application  
 
 ![Task Manager Banner](/Static/Images/Homepage.png)  
 
