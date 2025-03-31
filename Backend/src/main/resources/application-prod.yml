@@ -1,0 +1,4 @@
+spring:
+ data:
+  mongodb:
+   uri: mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_CLUSTER}/${MONGODB_DATABASE}?${MONGODB_OPTIONS}

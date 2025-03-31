@@ -1,0 +1,14 @@
+/* Navbar styles for glass effect */
+.navbar {
+  backdrop-filter: blur(10px);
+  /* Apply blur to the content behind */
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Semi-transparent background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for depth */
+}
+
+.navbar-nav {
+  z-index: 1050;
+  /* Ensure navbar is always above the content */
+}

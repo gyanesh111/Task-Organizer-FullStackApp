@@ -1,0 +1,227 @@
+/* Wrapper for tasks and Add Task button */
+.view-tasks-wrapper {
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: rgb(248, 249, 250);
+}
+
+.view-tasks-wrapper .d {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Top Add Task Button */
+.add-task-btn-top {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #ffc107;
+  /* Yellow */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-task-btn-top:hover {
+  background-color: #ffca28;
+  /* Lighter yellow on hover */
+}
+
+/* Container for horizontal alignment */
+.tasks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 16px;
+}
+
+/* Styling each task card */
+.task-card {
+  flex: 1 1 calc(25% - 24px);
+  min-width: 250px;
+  max-width: 300px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 1s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+  /* Slight hover effect */
+}
+
+/* Add Task Button Card */
+.add-task-card {
+  background: none !important;
+  min-height: 250px;
+  max-height: 300px;
+  border: 2px dotted lightgrey !important;
+  /* Dotted border to match next task */
+  box-shadow: none !important;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Title and description truncation */
+.task-title,
+.task-description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Description */
+.task-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Priority and deadline boxes */
+.priority-box,
+.deadline-box {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Circles for decoration */
+.circles-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+/* Progress bar styling */
+.progress {
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Buttons at the bottom */
+button {
+  margin-top: 8px;
+}
+
+/* Scrollbar styling for horizontal scrolling */
+.tasks-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Default state - text color is primary (e.g., blue) */
+.btn-outline-success {
+  color: #007bff;
+  /* Replace with your primary color */
+}
+
+/* On hover, change text color to white */
+.btn-outline-success:hover {
+  color: white;
+  background-color: #28a745;
+  /* This will change the background to green on hover */
+  border-color: #28a745;
+  /* Ensure the border color is green on hover */
+}
+
+/* Add Task Button at the top-right */
+.add-task-btn-top {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #ffc107;
+  /* Yellow */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-task-btn-top:hover {
+  background-color: #ffca28;
+  /* Lighter yellow on hover */
+}
+
+/* Title with long text handling */
+.task-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* Add ellipsis for long titles */
+}
+
+/* Description handling for long text */
+.task-description {
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* Add ellipsis for long descriptions */
+}
+
+/* Progress text */
+.progress {
+  height: 20px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .view-tasks-wrapper {
+    position: relative;
+    top: -55px;
+    left: 0;
+  }
+}

@@ -1,0 +1,50 @@
+.profile-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  position: relative;
+}
+
+.profile-avatar {
+  display: inline-block;
+  position: relative;
+}
+
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.image-upload-input {
+  display: none;
+}
+
+.edit-avatar-button {
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}
+
+.profile-form {
+  margin-top: 20px;
+}
+
+.profile-actions .btn {
+  margin: 5px;
+}
+
+label {
+  font-size: 10px;
+}

@@ -1,0 +1,149 @@
+/* Task details wrapper styling */
+.task-details-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Task details card */
+.task-details-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Progress Bar Styling */
+.progress {
+  height: 25px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  line-height: 25px;
+  color: #fff;
+}
+
+/* Priority and Deadline styling */
+.priority-box,
+.deadline-box {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Table Styling */
+.table {
+  font-size: 1rem;
+  margin-bottom: 0;
+  table-layout: fixed;
+  /* Ensure that the columns have fixed width */
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Column Specific Widths */
+.table .subtask-name {
+  width: 80%;
+  /* More width for the Subtask Name */
+}
+
+.table .status {
+  width: 20%;
+  /* Enough width for the Status */
+}
+
+/* Table Header Styling */
+.table thead {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #495057;
+}
+
+/* Table Body Styling */
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #b4b3b3;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #d6d6d6;
+}
+
+.table-success td {
+  background-color: #d4edda !important;
+}
+
+.table-danger td {
+  background-color: #f8d7da !important;
+}
+
+/* Badge Styling */
+.badge {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 6px 12px;
+}
+
+/* Badge Styling */
+.badge {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 6px 12px;
+}
+
+
+
+/* Badge Styling */
+.badge {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 6px 12px;
+}
+
+.table-success td {
+  background-color: #d4edda !important;
+}
+
+.table-danger td {
+  background-color: #f8d7da !important;
+}
+
+/* Subtask Status Styling */
+.completed {
+  background-color: #d4edda;
+  /* Light Green for Completed */
+  border: 1px solid #c3e6cb;
+}
+
+.pending {
+  background-color: #f8d7da;
+  /* Light Red for Pending */
+  border: 1px solid #f5c6cb;
+}
+
+/* Task Title and Description Styling */
+.task-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.task-description {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+/* Buttons and Icons */
+.btn {
+  font-weight: 500;
+}

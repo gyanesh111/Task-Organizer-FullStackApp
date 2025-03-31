@@ -1,0 +1,193 @@
+/* App.css */
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+
+/* Main layout when user is logged in */
+.app-layout {
+  display: flex;
+  /* Flexbox for sidebar and main content */
+  min-height: 100vh;
+  /* Ensure the layout fills the viewport height */
+}
+
+.app-layout.with-sidebar .main-content {
+  margin-left: 250px;
+  /* Space for sidebar width */
+}
+
+.sidebar {
+  width: 250px;
+  /* Fixed sidebar width */
+  background-color: #f8f9fa;
+  /* Light gray background */
+  border-right: 1px solid #ddd;
+  /* Optional border for sidebar */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  flex: 1;
+  /* Take up the remaining space */
+  padding: 20px;
+  background-color: #ffffff;
+  /* White background for the main content */
+  overflow: auto;
+  /* Prevent content overflow */
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 50;
+}
+
+body {
+  padding-top: 75px;
+  /* Adjust based on the height of your navbar */
+}
+
+
+div {
+  font-family: "Euclid Circular A", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: larger;
+}
+
+input.form-control {
+  font-family: "Euclid Circular A", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: none;
+  padding: 10px;
+}
+
+.special-font {
+  font-family: "MongoDB Value Serif", "Times New Roman", serif;
+  font-size: 1em;
+  color: rgb(0, 104, 74);
+}
+
+
+.navbar .btn {
+  background-color: orangered;
+  color: white;
+}
+
+.custom-btn {
+  border: none;
+  background-color: rgb(0, 104, 74);
+  border-radius: 10px;
+  width: 30%;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+/* Homepage */
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.left-side {
+  float: left;
+  margin: auto;
+}
+
+.right-side {
+  margin: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #555;
+  margin-right: 10px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 12px;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 120px !important;
+  }
+
+  .main {
+    flex-direction: column-reverse !important;
+    width: 100% !important;
+    padding: none !important;
+    overflow: hidden;
+  }
+
+  .left-side {
+    max-width: 100% !important;
+    height: 60% !important;
+    padding: 20px !important;
+    align-items: center;
+  }
+
+  .main .heading-fonts {
+    font-size: 2rem !important;
+  }
+
+  .left-side p {
+    font-size: 0.875rem !important;
+  }
+
+  .right-side {
+    max-width: 100% !important;
+    height: 40% !important;
+    margin: none !important;
+    padding: 20px !important;
+  }
+
+  .add-task-text {
+    display: none;
+  }
+
+  .search-container {
+    width: 40%;
+  }
+
+  .update-task,
+  .task-details-wrapper,
+  .no-task {
+    position: relative;
+    top: -55px;
+    left: 0;
+  }
+
+  .social-logo-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .back-login {
+    width: 100%;
+    margin-left: 3rem !important;
+  }
+}

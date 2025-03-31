@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: Backend
+  profiles:
+    active: ${ENV:dev}
+  mail:
+   host: smtp.gmail.com
+   port: 587
+   username: vishwanathkhuli347@gmail.com
+   password: hwht ncrz kvpo fmmk
+   properties:
+    mail:
+     smtp:
+      auth: true
+      starttls:
+       enable: true
+   default-encoding: UTF-8
+
+server:
+  port: 8080
+
+# Strong 256-bit JWT secret (must be at least 32 characters for HS256)
+jwt:
+  secret: "ThisIsAReallyStrongHS256SecretKey@123"  # 32+ characters, strong & random
+  token:
+    validity: 259200000   # 3 days in milliseconds
+  refresh:
+    token:
+      validity: 604800000  # 7 days in millisecond
+
